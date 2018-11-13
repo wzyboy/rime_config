@@ -7,8 +7,11 @@ customization:
 patch:
   "style/color_scheme": google
   "style/keyboards": [google_qwerty, google_number, symbols_4row]
+  "preset_keys/space/label": '␣'
+  "preset_keys/BackSpace/label": '⬅'
+  "preset_keys/Return/label": '⏎'
   "preset_keys/Keyboard_google_number": {label: '123', send: Eisu_toggle, select: google_number}
-  "preset_keys/Keyboard_symbols_4row": {label: '1?#', send: Eisu_toggle, select: symbols_4row}
+  "preset_keys/Keyboard_symbols_4row": {label: '!?#', send: Eisu_toggle, select: symbols_4row}
   "preset_keyboards/google_qwerty":
     name: "Google QWERTY"
     author: "wzyboy"
@@ -48,13 +51,13 @@ patch:
     - {click: 'b', swipe_down: '~', hint: '~'}
     - {click: 'n', swipe_down: '!', hint: '!'}
     - {click: 'm', swipe_down: "…", hint: '…'}
-    - {click: BackSpace, width: 15, label: '⬅'}
+    - {click: BackSpace, width: 15}
       # row 4
     - {click: Keyboard_symbols_4row, long_click: Keyboard_google_number, width: 15}
-    - {click: ',', long_click: Color_settings}
+    - {click: ',', long_click: Color_settings, label: '，'}
     - {click: Hide, long_click: Settings}
     - {click: space, width: 40}
-    - {click: '.', long_click: '…'}
+    - {click: '.', long_click: '…', label: '。'}
     - {click: Return, width: 15}
   "preset_keyboards/google_number":
     name: "Google Number"
@@ -73,17 +76,17 @@ patch:
     - {click: '4'}
     - {click: '5'}
     - {click: '6'}
-    - {click: space, label: '␣'}
+    - {click: space}
       # row 3
     - {click: '*'}
     - {click: '7'}
     - {click: '8'}
     - {click: '9'}
-    - {click: BackSpace, label: '⬅'}
+    - {click: BackSpace}
       # row 4
     - {click: Keyboard_default}
     - {click: ',', width: 10}
-    - {click: Keyboard_symbols_4row, width: 10, label: '@?#'}
+    - {click: Keyboard_symbols_4row, width: 10}
     - {click: '0'}
     - {click: '=', width: 10}
     - {click: '.', width: 10}
