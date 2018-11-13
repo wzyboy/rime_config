@@ -1,0 +1,187 @@
+customization:
+  distribution_code_name: ""
+  distribution_version: ""
+  generator: "Rime-JNI"
+  modified_time: "Tue Nov 13 20:35:19 2018"
+  rime_version: 1.2.9
+patch:
+  "style/color_scheme": google
+  "style/keyboards": [google_qwerty, google_number, symbols_4row]
+  "preset_keys/Keyboard_google_number": {label: '123', send: Eisu_toggle, select: google_number}
+  "preset_keys/Keyboard_symbols_4row": {label: '1?#', send: Eisu_toggle, select: symbols_4row}
+  "preset_keyboards/google_qwerty":
+    name: "Google QWERTY"
+    author: "wzyboy"
+    ascii_mode: 0
+    width: 10
+    height: 60
+    keys:
+      # row 1
+    - {click: 'q', swipe_down: '1', hint: '1'}
+    - {click: 'w', swipe_down: '2', hint: '2'}
+    - {click: 'e', swipe_down: '3', hint: '3'}
+    - {click: 'r', swipe_down: '4', hint: '4'}
+    - {click: 't', swipe_down: '5', hint: '5'}
+    - {click: 'y', swipe_down: '6', hint: '6'}
+    - {click: 'u', swipe_down: '7', hint: '7'}
+    - {click: 'i', swipe_down: '8', hint: '8'}
+    - {click: 'o', swipe_down: '9', hint: '9'}
+    - {click: 'p', swipe_down: '0', hint: '0'}
+      # row 2
+    - {width: 5}
+    - {click: 'a', swipe_down: '@', hint: '@'}
+    - {click: 's', swipe_down: '*', hint: '*'}
+    - {click: 'd', swipe_down: '+', hint: '+'}
+    - {click: 'f', swipe_down: '-', hint: '-'}
+    - {click: 'g', swipe_down: '=', hint: '='}
+    - {click: 'h', swipe_down: '/', hint: '/'}
+    - {click: 'j', swipe_down: '#', hint: '#'}
+    - {click: 'k', swipe_down: '(', hint: '('}
+    - {click: 'l', swipe_down: ')', hint: ')'}
+    - {width: 5}
+      # row 3
+    - {click: Shift_L, send_bindings: false, width: 15}
+    - {click: 'z', swipe_down: "'", hint: "'"}
+    - {click: 'x', swipe_down: ':', hint: ':'}
+    - {click: 'c', swipe_down: '"', hint: '"'}
+    - {click: 'v', swipe_down: '?', hint: '?'}
+    - {click: 'b', swipe_down: '~', hint: '~'}
+    - {click: 'n', swipe_down: '!', hint: '!'}
+    - {click: 'm', swipe_down: "…", hint: '…'}
+    - {click: BackSpace, width: 15, label: '⬅'}
+      # row 4
+    - {click: Keyboard_symbols_4row, long_click: Keyboard_google_number, width: 15}
+    - {click: ',', long_click: Color_settings}
+    - {click: Hide, long_click: Settings}
+    - {click: space, width: 40}
+    - {click: '.', long_click: '…'}
+    - {click: Return, width: 15}
+  "preset_keyboards/google_number":
+    name: "Google Number"
+    author: "wzyboy"
+    width: 20
+    height: 60
+    keys:
+      # row 1
+    - {click: '+'}
+    - {click: '1'}
+    - {click: '2'}
+    - {click: '3'}
+    - {click: '#'}
+      # row 2
+    - {click: '-'}
+    - {click: '4'}
+    - {click: '5'}
+    - {click: '6'}
+    - {click: space, label: '␣'}
+      # row 3
+    - {click: '*'}
+    - {click: '7'}
+    - {click: '8'}
+    - {click: '9'}
+    - {click: BackSpace, label: '⬅'}
+      # row 4
+    - {click: Keyboard_default}
+    - {click: ',', width: 10}
+    - {click: Keyboard_symbols_4row, width: 10, label: '@?#'}
+    - {click: '0'}
+    - {click: '=', width: 10}
+    - {click: '.', width: 10}
+    - {click: Return, width: 20}
+  "preset_keyboards/symbols_4row":
+    name: "Symbol Keyboard, 4 rows"
+    author: "wzyboy"
+    ascii_mode: 0
+    width: 10
+    height: 60
+    keys:
+    - {click: '~',long_click: '`'}
+    - {click: '!'}
+    - {click: '@'}
+    - {click: '#'}
+    - {click: '$'}
+    - {click: '￥'}
+    - {click: '%'}
+    - {click: '^'}
+    - {click: '&'}
+    - {click: '*'}
+    - {click: '(', long_click: '{'}
+    - {click: ')', long_click: '}'}
+    - {click: '[', long_click: '【'}
+    - {click: ']', long_click: '】'}
+    - {click: '「', long_click: '『'}
+    - {click: '」', long_click: '』'}
+    - {click: '、', ascii: '\', long_click: '|'}
+    - {click: '/', long_click: '√'}
+    - {click: ':'}
+    - {click: ';'}
+    - {click: '+'}
+    - {click: '-', long_click: '_'}
+    - {click: '='}
+    - {click: '〈', long_click: '《', ascii: '<'}
+    - {click: '〉', long_click: '》', ascii: '>'}
+    - {click: '“', ascii: '"', long_click: '‘'}
+    - {click: '”', ascii: "'", long_click: '’'}
+    - {click: '，', ascii: ','}
+    - {click: '？', ascii: '?'}
+    - {click: BackSpace}
+    - {click: Keyboard_default, width: 15}
+    - {click: Keyboard_google_number}
+    - {click: space, width: 40}
+    - {click: '。', ascii: '.'}
+    - {click: Hide}
+    - {click: Return, width: 15}
+  "preset_keyboards/google_symbols_common_1":
+    name: "Google Pinyin Symbols"
+    author: "wzyboy"
+    ascii_mode: 0
+    width: 10
+    height: 60
+    keys:
+      # row 0
+#    - {click: '1', label: '1?#', height: 30}
+#    - {click: '2', label: '( )'}
+#    - {click: '3', label: '→'}
+#    - {click: '4', label: '+=×÷'}
+#    - {click: '5', label: '①'}
+#    - {click: '6', label: '◇'}
+#    - {width: 40}
+      # row 1
+    - {click: '1'}
+    - {click: '2'}
+    - {click: '3'}
+    - {click: '4'}
+    - {click: '5'}
+    - {click: '6'}
+    - {click: '7'}
+    - {click: '8'}
+    - {click: '9'}
+    - {click: '0'}
+      # row 2
+    - {click: '!'}
+    - {click: '@'}
+    - {click: '#'}
+    - {click: '$'}
+    - {click: '%'}
+    - {click: '^'}
+    - {click: '&'}
+    - {click: '*'}
+    - {click: '('}
+    - {click: ')'}
+      # row 3
+    - {click: '「', long_click: '“'}
+    - {click: '」', long_click: '”'}
+    - {click: '='}
+    - {click: '、', ascii: '_'}
+    - {click: '：'}
+    - {click: '；'}
+    - {click: '？'}
+    - {click: '！'}
+    - {click: BackSpace, width: 20}
+      # row 4
+    - {click: Keyboard_default, width: 15}
+    - {click: ','}
+    - {click: Keyboard_google_number}
+    - {click: space, width: 40}
+    - {click: '.'}
+    - {click: Return, width: 15}
