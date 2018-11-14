@@ -7,6 +7,7 @@ customization:
 patch:
   "style/color_scheme": google
   "style/keyboards": [google_qwerty, google_number, symbols_4row]
+  "style/hanb_font": HanaMinB.ttf
   "preset_keys/space/label": '␣'
   "preset_keys/BackSpace/label": '⬅'
   "preset_keys/Return/label": '⏎'
