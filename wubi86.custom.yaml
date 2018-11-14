@@ -4,3 +4,14 @@ patch:
   speller/max_code_length: 4
   speller/auto_select: true
   speller/auto_select_unique_candidate: true
+
+  # OpenCC
+  engine/filters:
+    - simplifier
+    - uniquifier
+  simplifier:
+    opencc_config: s2t.json
+    option_name: zh_trad
+  switches/@before last:
+    name: zh_trad
+    states: ["汉字", "漢字"]
