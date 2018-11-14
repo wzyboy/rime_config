@@ -7,6 +7,11 @@ import_tables:
   - zz
   - weight0
 sort: original
+columns:
+  - text
+  - code
+  - weight
+  - stem
 encoder:
   exclude_patterns:
     - '^z.*$'
@@ -19,12 +24,36 @@ encoder:
       formula: "AaBaCaZa"
 ...
 
-# mb2txt /usr/share/fcitx/table/wbx.mb | awk '{print $2 "\t" $1}'
+# Level 1 codes
 
-工	a
-戈	a
-或	a
-其	a
+工	a		aa
+了	b		bn
+以	c		ny
+在	d		dh
+有	e		de
+地	f		fb
+一	g		gg
+上	h		hh
+不	i		gi
+是	j		jg
+中	k		kh
+国	l		lg
+同	m		mg
+民	n		na
+为	o		yl
+这	p		yp
+我	q		tr
+的	r		rq
+要	s		sv
+和	t		tk
+产	u		ut
+发	v		nt
+人	w		ww
+经	x		xc
+主	y		yg
+
+# mb2txt /usr/share/fcitx/table/wbx.mb | awk '{print $2 "\t" $1}' | grep -vP '\t[a-z]$'
+
 式	aa
 戒	aa
 工	aaa
@@ -5022,9 +5051,6 @@ encoder:
 荒废	ayyn
 荒诞	ayyt
 荒唐	ayyv
-了	b
-子	b
-也	b
 陈	ba
 陳	ba
 孤臣孽子	baab
@@ -7191,9 +7217,6 @@ encoder:
 防变	byyo
 防腐	byyw
 阴谋诡计	byyy
-以	c
-又	c
-能	c
 戏	ca
 駴	caa
 能工巧匠	caaa
@@ -9199,10 +9222,6 @@ encoder:
 馼	cyy
 驻京	cyyi
 圣诞夜	cyyw
-在	d
-石	d
-大	d
-而	d
 左	da
 泰勒斯	daad
 礷	daal
@@ -14030,9 +14049,6 @@ encoder:
 矿床	dyys
 太郎	dyyv
 大庭广众	dyyw
-有	e
-月	e
-及	e
 肛	ea
 腊黄	eaam
 爱斯基摩	eaay
@@ -16250,10 +16266,6 @@ encoder:
 﨤	eyyp
 脏话	eyyt
 受让方	eyyy
-地	f
-土	f
-都	f
-却	f
 载	fa
 塔式	faaa
 堪萨斯	faad
@@ -21457,9 +21469,6 @@ encoder:
 南京市	fyym
 教育方针	fyyq
 地方话	fyyt
-一	g
-王	g
-于	g
 开	ga
 琖	gaa
 形式	gaaa
@@ -26942,10 +26951,6 @@ encoder:
 逼良为娼	gyyv
 死亡率	gyyx
 天方夜谭	gyyy
-上	h
-目	h
-此	h
-点	h
 虎	ha
 虐	haa
 虐	haag
@@ -28990,9 +28995,6 @@ encoder:
 眩	hyxy
 盿	hyy
 上座率	hyyx
-不	i
-水	i
-小	i
 江	ia
 淺	iaa
 港式	iaaa
@@ -34845,9 +34847,6 @@ encoder:
 游说	iyyu
 常言说得好	iyyv
 流言	iyyy
-是	j
-日	j
-最	j
 虹	ja
 暱	jaa
 暴牙	jaah
@@ -38017,9 +38016,6 @@ encoder:
 影讯	jyyn
 影迹	jyyo
 电话亭	jyyp
-中	k
-口	k
-只	k
 呀	ka
 咬牙切齿	kaah
 中草药	kaax
@@ -41589,10 +41585,6 @@ encoder:
 唱高调	kyym
 只许州官放火	kyyo
 听说读写	kyyp
-国	l
-田	l
-男	l
-回	l
 轼	la
 異	la
 轼	laa
@@ -44455,10 +44447,6 @@ encoder:
 轻言细语	lyxy
 回文诗	lyyf
 置诸高阁	lyyu
-同	m
-山	m
-几	m
-由	m
 曲	ma
 賤	maa
 同甘共苦	maaa
@@ -47268,9 +47256,6 @@ encoder:
 同义词	myyn
 凡庸	myyv
 风度翩翩	myyy
-民	n
-已	n
-忙	n
 民	na
 悈	naa
 民工	naaa
@@ -50894,9 +50879,6 @@ encoder:
 昼夜	nyyw
 心率	nyyx
 民族主义	nyyy
-为	o
-火	o
-米	o
 煤	oa
 烒	oaa
 烧菜	oaae
@@ -52892,9 +52874,6 @@ encoder:
 糖膏	oyyp
 炕床	oyys
 灬	oyyy
-这	p
-之	p
-被	p
 宽	pa
 空荡荡	paai
 密匝匝	paam
@@ -56317,9 +56296,6 @@ encoder:
 祖率	pyyx
 祷文	pyyy
 官方语言	pyyy
-我	q
-金	q
-多	q
 氏	qa
 錢	qaa
 钳工	qaaa
@@ -61958,10 +61934,6 @@ encoder:
 留恋	qyyo
 留底	qyyq
 留言	qyyy
-的	r
-白	r
-年	r
-把	r
 找	ra
 拭	raa
 拈花惹草	raaa
@@ -68062,10 +68034,6 @@ encoder:
 年高望重	ryyt
 抗议	ryyy
 白话文	ryyy
-要	s
-木	s
-本	s
-可	s
 械	sa
 械	saa
 模式	saaa
@@ -72084,10 +72052,6 @@ encoder:
 杭州	syyt
 述说	syyu
 柱廊	syyy
-和	t
-禾	t
-得	t
-很	t
 长	ta
 箋	taa
 长工	taaa
@@ -78373,10 +78337,6 @@ encoder:
 入座	tyyw
 入夜	tyyw
 程序设计	tyyy
-产	u
-立	u
-着	u
-将	u
 并	ua
 闭幕式	uaaa
 并茂	uaad
@@ -83316,9 +83276,6 @@ encoder:
 六畜	uyyx
 将计就计	uyyy
 门廊	uyyy
-发	v
-女	v
-好	v
 毁	va
 嫟	vaa
 嫟	vaak
@@ -85758,10 +85715,6 @@ encoder:
 姑妄言之	vyyp
 好说话	vyyt
 婉言谢绝	vyyx
-人	w
-八	w
-个	w
-但	w
 代	wa
 俴	waa
 代工	waaa
@@ -91465,10 +91418,6 @@ encoder:
 食言	wyyy
 雠	wyyy
 讎	wyyy
-经	x
-弓	x
-给	x
-比	x
 红	xa
 绿茸茸	xaab
 绣花鞋	xaaf
@@ -94542,10 +94491,6 @@ encoder:
 编订	xyys
 统率	xyyx
 毋庸讳言	xyyy
-主	y
-言	y
-就	y
-该	y
 度	ya
 °	ya
 试	yaa
