@@ -1,7 +1,7 @@
-# Rime dictionary: 092m
+# Rime dictionary
 ---
-name: 092m
-version: "0.0.1"
+name: wubi86.092m
+version: "1"
 import_tables:
   - wubi86
 sort: original
