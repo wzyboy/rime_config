@@ -1,5 +1,5 @@
 patch:
-  translator/dictionary: fcitx_wbx
+  translator/dictionary: fcitx_wbx.092m
   translator/enable_user_dict: false
   translator/enable_sentence: false
   speller/max_code_length: 4
