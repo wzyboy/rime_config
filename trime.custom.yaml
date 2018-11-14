@@ -1,8 +1,6 @@
 customization:
   distribution_code_name: ""
   distribution_version: ""
-  generator: "Rime-JNI"
-  modified_time: "Tue Nov 13 20:35:19 2018"
   rime_version: 1.2.9
 patch:
   "style/color_scheme": google
