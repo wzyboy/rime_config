@@ -5,6 +5,7 @@ name: fcitx_wbx
 version: "1"
 import_tables:
   - zz
+  - weight0
 sort: original
 encoder:
   exclude_patterns:

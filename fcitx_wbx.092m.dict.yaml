@@ -4,6 +4,7 @@ name: fcitx_wbx.092m
 version: "1"
 import_tables:
   - fcitx_wbx
+  - weight0
   - zz
 sort: original
 encoder:
