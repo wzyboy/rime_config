@@ -4,12 +4,7 @@ name: 092m
 version: "0.0.1"
 import_tables:
   - wubi86
-sort: by_weight
-columns:
-  - text
-  - code
-  - weight
-  - stem
+sort: original
 encoder:
   exclude_patterns:
     - '^z.*$'
