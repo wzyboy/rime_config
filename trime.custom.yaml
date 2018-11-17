@@ -3,9 +3,12 @@ customization:
   distribution_version: ""
   rime_version: 1.2.9
 patch:
-  "style/color_scheme": google
   "style/keyboards": [google_qwerty, google_number, symbols_4row]
   "style/hanb_font": HanaMinB.ttf
+  "style/color_scheme": google
+  "style/horizontal_gap": 4
+  "style/vertical_gap": 8
+  "style/round_corner": 16
   "preset_keys/space/label": '␣'
   "preset_keys/BackSpace/label": '⬅'
   "preset_keys/Return/label": '⏎'
@@ -16,7 +19,7 @@ patch:
     author: "wzyboy"
     ascii_mode: 0
     width: 10
-    height: 60
+    height: 52
     keys:
       # row 1
     - {click: 'q', swipe_down: '1', hint: '1'}
@@ -62,7 +65,7 @@ patch:
     name: "Google Number"
     author: "wzyboy"
     width: 20
-    height: 60
+    height: 52
     keys:
       # row 1
     - {click: '+'}
@@ -95,7 +98,7 @@ patch:
     author: "wzyboy"
     ascii_mode: 0
     width: 10
-    height: 60
+    height: 52
     keys:
     - {click: '~',long_click: '`'}
     - {click: '!'}
