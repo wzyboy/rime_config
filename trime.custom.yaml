@@ -9,8 +9,7 @@ patch:
   "style/horizontal_gap": 4
   "style/vertical_gap": 8
   "style/round_corner": 16
-  "preset_keys/space/label": '␣'
-  "preset_keys/BackSpace/label": '⬅'
+  "preset_keys/BackSpace/label": '⌫'
   "preset_keys/Return/label": '⏎'
   "preset_keys/Keyboard_google_number": {label: '123', send: Eisu_toggle, select: google_number}
   "preset_keys/Keyboard_symbols_4row": {label: '!?#', send: Eisu_toggle, select: symbols_4row}
