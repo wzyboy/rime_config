@@ -9,6 +9,27 @@ patch:
   "style/horizontal_gap": 4
   "style/vertical_gap": 8
   "style/round_corner": 16
+
+  # Floating window styles.
+  # Enable "Show floating window when composing" to use.
+  "style/horizontal": true
+  "style/layout/position": left
+  "style/layout/min_length": 1
+  "style/layout/max_length": 36
+  "style/layout/max_entries": 3
+  "style/layout/sticky_lines": 0
+  "style/layout/max_width": 930
+  "style/layout/margin_x": 0
+  "style/layout/margin_y": 0
+  "style/layout/border": 0
+  "style/layout/round_corner": 3
+  "style/layout/elevation": 8
+  "style/layout/alpha": 0xff
+  "style/layout/line_spacing_multiplier": 1
+  "style/window":
+    - {candidate: "%s ", comment: "%s "}
+
+  # Keyboard layouts.
   "preset_keys/BackSpace/label": '⌫'
   "preset_keys/Return/label": '⏎'
   "preset_keys/Keyboard_google_number": {label: '123', send: Eisu_toggle, select: google_number}
