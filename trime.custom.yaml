@@ -77,7 +77,7 @@ patch:
       # row 4
     - {click: Keyboard_symbols_4row, long_click: Keyboard_google_number, width: 15}
     - {click: ',', long_click: Color_settings, label: '，'}
-    - {click: Hide, long_click: Settings}
+    - {click: Theme_settings, long_click: Settings}
     - {click: space, width: 40}
     - {click: '.', long_click: '…', label: '。'}
     - {click: Return, width: 15}
