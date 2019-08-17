@@ -154,7 +154,7 @@ preset_keyboards:
     key_press_offset_x: 0
     key_press_offset_y: 3
     key_symbol_offset_x: *DsymX
-    label_transform: uppercase #uppercase|none 中文模式下的字母标签自动大写
+    label_transform: none #uppercase|none 中文模式下的字母标签自动大写
     keys:
       # 第一行
       - {click: q, swipe_down: '1', hint: '1', key_text_color: TEX1, key_symbol_color: TEX, key_back_color: AAA, hilited_key_back_color: AAH}
