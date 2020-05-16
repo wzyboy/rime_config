@@ -5,8 +5,6 @@ patch:
   speller/max_code_length: 4
   speller/auto_select: true
   speller/auto_select_unique_candidate: true
-  reverse_lookup/prefix: "`"
-  recognizer/patterns/reverse_lookup: "^`[a-z]*'?$"
 
   # OpenCC
   engine/filters:
