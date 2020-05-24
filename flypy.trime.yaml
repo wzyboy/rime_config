@@ -953,7 +953,7 @@ preset_color_schemes:
     back_color: 0xffeeeeee
     text_color: 0xff333333
     candidate_separator_color: 0x00
-    keyboard_back_color: 0xffffffff
+    keyboard_back_color: 0xffeeeeee
     comment_text_color: 0xff73cacc
     hilited_comment_text_color: 0xff333333
     hilited_key_back_color: 0xffe1e1e1
